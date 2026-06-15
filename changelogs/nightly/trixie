@@ -2,7 +2,7 @@ python3.13 (3.13.14-32-g5810def6dd-1+trixie1 ) trixie; urgency=medium
 
   * Update to v3.13.14-32-g5810def6dd.
 
- -- Anthony Sottile (deadsnakes) <asottile+deadsnakes@umich.edu>  Sun, 14 Jun 2026 11:17:08 +0000
+ -- Luis Alejandro Martínez Faneyth <luis@luisalejandro.org>  Mon, 15 Jun 2026 00:14:12 +0000
 
 python3.13 (3.13.14-29-gc606d1518c-1+trixie1 ) trixie; urgency=medium
 
