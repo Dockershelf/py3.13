@@ -14,7 +14,7 @@ Build-Depends: debhelper (>= 9), @bd_dpkgdev@
   locales [!armel !avr32 !hppa !ia64 !mipsel],
   libsqlite3-dev, libffi-dev (>= 3.0.5) [!or1k !avr32],
   libgpm2 [!hurd-i386 !kfreebsd-i386 !kfreebsd-amd64],
-  mime-support, netbase, bzip2, time, python3@bd_qual@,
+  media-types, netbase, bzip2, time, python3@bd_qual@,
   net-tools, xvfb, xauth
 Build-Depends-Indep: python3-sphinx, texinfo
 Standards-Version: 4.3.0
@@ -27,7 +27,7 @@ Architecture: any
 Multi-Arch: allowed
 Priority: @PRIO@
 Depends: lib@PVER@-stdlib (= ${binary:Version}),
- mime-support,
+ media-types,
  ${shlibs:Depends}, ${misc:Depends}
 Suggests: @PVER@-venv, binutils
 Breaks: ${python39:Breaks}
