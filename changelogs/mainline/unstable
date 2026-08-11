@@ -1,3 +1,9 @@
+python3.13 (3.13.15-1+unstable1) unstable; urgency=medium
+
+  * Update to v3.13.15.
+
+ -- Luis Alejandro Martínez Faneyth <luis@luisalejandro.org>  Tue, 11 Aug 2026 06:47:39 +0000
+
 python3.13 (3.13.14-1+unstable3) unstable; urgency=medium
 
   * Replace mime-support with media-types for libpython3.13-stdlib.
