@@ -9,10 +9,10 @@ this is only needed on jammy and older
  2 files changed, 4 insertions(+)
 
 diff --git a/Lib/test/test_sax.py b/Lib/test/test_sax.py
-index 9b3014a..74f902e 100644
+index 412ea1b..54b0b9e 100644
 --- a/Lib/test/test_sax.py
 +++ b/Lib/test/test_sax.py
-@@ -1240,6 +1240,7 @@ def test_flush_reparse_deferral_enabled(self):
+@@ -1256,6 +1256,7 @@ def test_flush_reparse_deferral_enabled(self):
  
          self.assertEqual(result.getvalue(), start + b"<doc></doc>")
  
@@ -21,10 +21,10 @@ index 9b3014a..74f902e 100644
          result = BytesIO()
          xmlgen = XMLGenerator(result)
 diff --git a/Lib/test/test_xml_etree.py b/Lib/test/test_xml_etree.py
-index 4a76a5b..368e765 100644
+index 3d098cc..aba0d36 100644
 --- a/Lib/test/test_xml_etree.py
 +++ b/Lib/test/test_xml_etree.py
-@@ -1599,9 +1599,11 @@ def test_simple_xml(self, chunk_size=None, flush=False):
+@@ -1671,9 +1671,11 @@ def test_simple_xml(self, chunk_size=None, flush=False):
          self.assert_event_tags(parser, [('end', 'root')])
          self.assertIsNone(parser.close())
  
@@ -36,7 +36,7 @@ index 4a76a5b..368e765 100644
      def test_simple_xml_chunk_5(self):
          self.test_simple_xml(chunk_size=5, flush=True)
  
-@@ -1828,6 +1830,7 @@ def test_flush_reparse_deferral_enabled(self):
+@@ -1900,6 +1902,7 @@ def test_flush_reparse_deferral_enabled(self):
  
          self.assert_event_tags(parser, [('end', 'doc')])
  
